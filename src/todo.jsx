@@ -18,10 +18,35 @@
 
 // conditional rendering option 2
 
- export default  function Todo({task,isDone}){
+//  export default  function Todo({task,isDone}){
   
-  if(isDone){
-    return  <li>Finished:{task}</li>
-  }
-  return <li>Work one:{task}</li>
+//   if(isDone){
+//     return  <li>Finished:{task}</li>
+//   }
+//   return <li>Work one:{task}</li>
+// }
+
+// conditional rendering option  3 : ternary operator 
+// export default function Todo({task,isDone}){
+//     return(
+//         <li>{isDone ?'Finish': 'work one' }:{task}</li>
+//     )
+// }
+
+
+// // conditional rendering option 4: && 
+//  export default  function Todo({task,isDone}){
+  
+//     return (
+//         <li>{task} {isDone && ': Done'}</li>
+//     )
+// }
+
+
+// conditional rendering option 5: || 
+export default  function Todo({task,isDone}){
+  
+    return (
+        <li>{task} {isDone ||  ': Do Itf'}</li>
+    )
 }
