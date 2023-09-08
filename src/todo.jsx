@@ -47,6 +47,6 @@
 export default  function Todo({task,isDone}){
   
     return (
-        <li>{task} {isDone ||  ': Do Itf'}</li>
+        <li>{task} {isDone ||  ': Do it'}</li>
     )
 }
